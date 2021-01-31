@@ -12,7 +12,6 @@ import {
   fade,
   photoAnim,
   lineAnim,
-  sliderWork,
   sliderContainer,
   slider,
 } from '../animation';

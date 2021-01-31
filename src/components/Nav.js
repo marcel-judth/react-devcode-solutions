@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../img/logo.svg';
 import { motion } from 'framer-motion';
 
 const Nav = () => {
