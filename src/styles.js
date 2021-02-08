@@ -39,7 +39,7 @@ export const Image = styled.div`
   justify-content: center;
   img {
     width: 60%;
-    height: 60vh;
+    height: 80vh;
     object-fit: cover;
   }
 `;

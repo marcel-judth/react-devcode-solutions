@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 //images
-import athlete from '../img/athlete-small.png';
-import theracer from '../img/theracer-small.png';
+import travelly from '../img/Travelly-1.png';
+import eventApp from '../img/IphoneMockups.png';
+import uniconta from '../img/Desktop.png';
 import goodtimes from '../img/goodtimes-small.png';
 
 //animations
@@ -38,19 +39,19 @@ const OurWork = () => {
       </motion.div>
 
       <Movie>
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.h2 variants={fade}>Business Website</motion.h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
-            <motion.img src={athlete} variants={photoAnim} alt="the athlete" />
+            <motion.img src={travelly} variants={photoAnim} alt="the athlete" />
           </Hide>
         </Link>
       </Movie>
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>The Racer</h2>
+        <h2>Custom Apps</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="the athlete" />
+          <img src={eventApp} alt="the athlete" />
         </Link>
       </Movie>
       <Movie
@@ -62,7 +63,7 @@ const OurWork = () => {
         <h2>Good Times</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="the athlete" />
+          <img src={uniconta} alt="the athlete" />
         </Link>
       </Movie>
       <ScrollTop />

@@ -3,7 +3,7 @@ import clock from '../img/clock.svg';
 import diaphragm from '../img/diaphragm.svg';
 import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
-import home2 from '../img/home2.png';
+import home2 from '../img/about-section.png';
 import { About, Description, Image } from '../styles';
 import styled from 'styled-components';
 import { scrollReveal } from '../animation';
@@ -33,14 +33,14 @@ const ServicesSection = () => {
           <Card className="card">
             <div className="icon">
               <img src={teamwork} alt="icon teamwork" />
-              <h3>Teamwork</h3>
+              <h3>Guidance</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={diaphragm} alt="icon diaphragm" />
-              <h3>Diaphragm</h3>
+              <h3>Breathtaking</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>

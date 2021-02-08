@@ -15,10 +15,10 @@ const FaqSection = () => {
       variants={scrollReveal}
     >
       <h2>
-        Any questions <span>FAQ</span>
+        Products/ <span>Software</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How do I Start">
+        <Toggle title="Web-Development (Webshops, CMS, Portfolios, Business, ...)">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -28,7 +28,7 @@ const FaqSection = () => {
           </div>
         </Toggle>
 
-        <Toggle title="Daily schedule?">
+        <Toggle title="Desktop-Applications (accounting management, article management, dashboards, ...)">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -38,7 +38,7 @@ const FaqSection = () => {
           </div>
         </Toggle>
 
-        <Toggle title="Different payment methods?">
+        <Toggle title="App-Development (shops, blogs, ticket-management-systems, ...)">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -48,7 +48,17 @@ const FaqSection = () => {
           </div>
         </Toggle>
 
-        <Toggle title="What products do you offer?">
+        <Toggle title="Social-Media marketing (Instagram, Facebook, Twitter, ...)">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
+              tempore?
+            </p>
+          </div>
+        </Toggle>
+
+        <Toggle title="Get in Contact and present us your wisch.">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
