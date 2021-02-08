@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import travelly from '../img/Travelly-1.png';
 import eventApp from '../img/IphoneMockups.png';
 import uniconta from '../img/Desktop.png';
-import goodtimes from '../img/goodtimes-small.png';
 
 //animations
 import { motion } from 'framer-motion';
