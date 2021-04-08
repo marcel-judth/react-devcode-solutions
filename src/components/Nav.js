@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import logo from '../img/logo.svg';
 
 const Nav = () => {
   const { pathname } = useLocation();
@@ -8,13 +9,14 @@ const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <Link id="logo" to="/">
+        <Link id="logo" to="/" className="link-logo">
+          <img src={logo} height={40} width={40} />
           <span>DevCode</span> Solutions
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to="/">1. About Us</Link>
+          <Link to="/">1. Home</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -22,15 +24,18 @@ const Nav = () => {
           />
         </li>
         <li>
-          <Link to="/work">2. Our Work</Link>
+          <Link to="/work">2. Projekte</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/work/:id' ? '50%' : '0%' }}
+            animate={{
+              width:
+                pathname === '/work' || pathname === '/work/:id' ? '50%' : '0%',
+            }}
           />
         </li>
         <li>
-          <Link to="/contact">3. Contact Us</Link>
+          <Link to="/contact">3. Kontakt</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -69,12 +74,21 @@ const StyledNav = styled.nav`
     padding-left: 10rem;
     position: relative;
   }
+
+  .link-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin-right: 1rem;
+    }
+  }
+
   @media (max-width: 1300px) {
     flex-direction: column;
     padding: 2rem 1rem;
     #logo {
-      display: inline-block;
-      margin: 1rem;
+      margin: 0.5rem;
     }
     ul {
       padding: 2rem;

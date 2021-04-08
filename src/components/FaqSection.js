@@ -4,6 +4,9 @@ import Toggle from './Toggle';
 import { AnimateSharedLayout } from 'framer-motion';
 import { useScroll } from './useScroll';
 import { scrollReveal } from '../animation';
+import { CgWebsite } from 'react-icons/cg';
+import { MdComputer } from 'react-icons/md';
+import { FaMobileAlt, FaInstagram } from 'react-icons/fa';
 
 const FaqSection = () => {
   const [element, controls] = useScroll();
@@ -15,12 +18,12 @@ const FaqSection = () => {
       variants={scrollReveal}
     >
       <h2>
-        Products/ <span>Software</span>
+        <span>Leistungen</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="Web-Development (Webshops, CMS, Portfolios, Business, ...)">
+        <Toggle title="Web-Anwendungen" icon={<CgWebsite />}>
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p> (Webshops, CMS, Portfolios, Business, ...)</p>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
               tempore?
@@ -28,9 +31,9 @@ const FaqSection = () => {
           </div>
         </Toggle>
 
-        <Toggle title="Desktop-Applications (accounting management, article management, dashboards, ...)">
+        <Toggle title="Desktop-Anwendungen" icon={<MdComputer color="white" />}>
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p> (accounting management, article management, dashboards, ...)</p>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
               tempore?
@@ -38,9 +41,9 @@ const FaqSection = () => {
           </div>
         </Toggle>
 
-        <Toggle title="App-Development (shops, blogs, ticket-management-systems, ...)">
+        <Toggle title="Mobile Apps " icon={<FaMobileAlt color="white" />}>
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>(shops, blogs, ticket-management-systems, ...)</p>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
               tempore?
@@ -48,19 +51,12 @@ const FaqSection = () => {
           </div>
         </Toggle>
 
-        <Toggle title="Social-Media marketing (Instagram, Facebook, Twitter, ...)">
+        <Toggle
+          title="Social-Media marketing "
+          icon={<FaInstagram color="white" />}
+        >
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
-              tempore?
-            </p>
-          </div>
-        </Toggle>
-
-        <Toggle title="Get in Contact and present us your wisch.">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>(Instagram, Facebook, Twitter, ...)</p>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
               tempore?
@@ -81,6 +77,27 @@ const Faq = styled(About)`
     padding-bottom: 2rem;
     font-weight: lighter;
   }
+
+  .toogle-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+
+  h4 {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
   .faq-line {
     background: #cccccc;
     height: 0.2rem;
