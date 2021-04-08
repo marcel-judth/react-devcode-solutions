@@ -10,7 +10,7 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link id="logo" to="/" className="link-logo">
-          <img src={logo} height={40} width={40} />
+          <img src={logo} alt="logo Devcode Solutions" height={40} width={40} />
           <span>DevCode</span> Solutions
         </Link>
       </h1>
