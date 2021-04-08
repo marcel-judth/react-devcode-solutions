@@ -52,24 +52,29 @@ const OurWork = () => {
       </motion.div>
 
       <Project>
-        <motion.h2 variants={fade}>Website für Ihre Firma</motion.h2>
+        <motion.h2 variants={fade}>Website1</motion.h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/the-athlete">
+        <Link to="/work/travelly-website">
           <Hide>
-            <motion.img src={travelly} variants={photoAnim} alt="the athlete" />
+            <motion.img
+              src={travelly}
+              variants={photoAnim}
+              alt="travelly website"
+            />
           </Hide>
         </Link>
       </Project>
+
       <Project
         ref={element}
         variants={fade}
         animate={controls}
         initial="hidden"
       >
-        <h2>Individuelle Apps</h2>
+        <h2>App1</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-racer">
-          <img src={eventApp} alt="the athlete" />
+        <Link to="/work/eventApp">
+          <img src={eventApp} alt="eventApp-mockups" />
         </Link>
       </Project>
       <Project
@@ -78,10 +83,10 @@ const OurWork = () => {
         animate={controls2}
         initial="hidden"
       >
-        <h2>individuelle Business-Software</h2>
+        <h2>Desktop-App</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/good-times">
-          <img src={uniconta} alt="the athlete" />
+        <Link to="/work/uniconta">
+          <img src={uniconta} alt="desktop application macbook" />
         </Link>
       </Project>
 
@@ -91,10 +96,10 @@ const OurWork = () => {
         animate={controls3}
         initial="hidden"
       >
-        <h2>Webshops</h2>
+        <h2>Webshop</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/good-times">
-          <img src={webshop} alt="the athlete" />
+        <Link to="/work/webshop">
+          <img src={webshop} alt="webshop mockups" />
         </Link>
       </Project>
 
@@ -106,8 +111,8 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/good-times">
-          <img src={outdoor} alt="the athlete" />
+        <Link to="/work/outdoorsolution">
+          <img src={outdoor} alt="outdoorsolution website" />
         </Link>
       </Project>
       <Project
@@ -118,8 +123,8 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/good-times">
-          <img src={elenaJoy} alt="the athlete" />
+        <Link to="/work/elena-joy-website">
+          <img src={elenaJoy} alt="elena joy website" />
         </Link>
       </Project>
       <Project
@@ -130,8 +135,8 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/good-times">
-          <img src={kinofabrik} alt="the athlete" />
+        <Link to="/work/kinofabrik">
+          <img src={kinofabrik} alt="kinofabrik Website" />
         </Link>
       </Project>
       <Project
@@ -142,7 +147,7 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/good-times">
+        <Link to="/work/gh-social-media">
           <img src={gh} alt="the athlete" />
         </Link>
       </Project>
@@ -154,8 +159,8 @@ const OurWork = () => {
       >
         <h2>Music-Player</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/good-times">
-          <img src={musicPlayer} alt="the athlete" />
+        <Link to="/work/music-player">
+          <img src={musicPlayer} alt="music player" />
         </Link>
       </Project>
       <Project
@@ -166,8 +171,8 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/good-times">
-          <img src={portfolio} alt="the athlete" />
+        <Link to="/work/portfolio">
+          <img src={portfolio} alt="portfolio website" />
         </Link>
       </Project>
 

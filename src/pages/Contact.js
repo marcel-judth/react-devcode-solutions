@@ -60,7 +60,7 @@ const Contact = () => {
             <FaPhone /> <a href="tel:+4367682595032">+43 676 8259 5032</a>
           </div>
           <div className="info-wrapper">
-            <IoMdMail />{' '}
+            <IoMdMail />
             <a href="tel:info@devcodesolutions.com">
               info@devcodesolutions.com
             </a>
@@ -69,17 +69,21 @@ const Contact = () => {
             <FaMapMarkerAlt /> <a href="">Villach, AT</a>
           </div>
         </InfoContainer>
+        <BackgroundDiv />
+        <SocialMediaIcons
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
+          <a href="https://instagram.com">
+            <FaFacebookF />
+          </a>
+          <a href="https://instagram.com">
+            <AiFillInstagram />
+          </a>
+        </SocialMediaIcons>
       </ContactStyle>
-      <BackgroundDiv />
-
-      <SocialMediaIcons>
-        <a href="https://instagram.com">
-          <FaFacebookF />
-        </a>
-        <a href="https://instagram.com">
-          <AiFillInstagram />
-        </a>
-      </SocialMediaIcons>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import { MovieState } from '../movieState';
+import { ProjectState } from '../projectState';
 import { useEffect, useState } from 'react';
 //animations
 import { motion } from 'framer-motion';
@@ -9,7 +9,7 @@ import { pageAnimation } from '../animation';
 const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [movies] = useState(MovieState);
+  const [movies] = useState(ProjectState);
   const [movie, setMovie] = useState(null);
 
   //useEffect
@@ -40,9 +40,12 @@ const MovieDetail = () => {
               />
             ))}
           </Awards>
-          <ImageDisplay>
-            <img src={movie.secondaryImg} alt="movie" />
-          </ImageDisplay>
+
+          {movie.secondaryImg && (
+            <ImageDisplay>
+              <img src={movie.secondaryImg} alt="movie" />
+            </ImageDisplay>
+          )}
         </Details>
       )}
     </>
@@ -64,7 +67,7 @@ const Headline = styled.div`
   }
   img {
     width: 100%;
-    height: 70vh;
+    height: auto;
     object-fit: cover;
   }
 `;
