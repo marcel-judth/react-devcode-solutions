@@ -66,7 +66,7 @@ const Contact = () => {
             </a>
           </div>
           <div className="info-wrapper">
-            <FaMapMarkerAlt /> <a href="">Villach, AT</a>
+            <FaMapMarkerAlt /> <a href="https://instagram.com">Villach, AT</a>
           </div>
         </InfoContainer>
         <BackgroundDiv />
@@ -281,19 +281,19 @@ const InputWrapper = styled.div`
   }
 `;
 
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #353535;
-`;
+// const Circle = styled.div`
+//   border-radius: 50%;
+//   width: 3rem;
+//   height: 3rem;
+//   background: #353535;
+// `;
 
-const Social = styled(motion.div)`
-  display: flex;
-  align-items: center;
-  h2 {
-    margin: 2rem;
-  }
-`;
+// const Social = styled(motion.div)`
+//   display: flex;
+//   align-items: center;
+//   h2 {
+//     margin: 2rem;
+//   }
+// `;
 
 export default Contact;
