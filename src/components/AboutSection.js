@@ -1,19 +1,21 @@
 // import home1 from '../img/marcel-judth.png';
 
-import home1 from '../img/about-section.png';
+import { motion } from "framer-motion";
 
-import { About, Description, Image, Hide } from '../styles';
-//Framer motion
-import { motion } from 'framer-motion';
-import { titleAnim, fade, photoAnim } from '../animation';
-import Wave from './Wave';
+import { About, Description, Image, Hide } from "../styles";
+import { titleAnim, fade, photoAnim } from "../animation";
+import Wave from "./Wave";
+
+import home1 from "../img/about-section.png";
+import logo from "../img/logo.svg";
+
 const AboutSection = () => {
   const sendMail = () => {
-    window.location.href = 'mailto:info@devcodesolutions.com';
+    window.location.href = "mailto:info@devcodesolutions.com";
   };
 
   const call = () => {
-    window.location.href = 'tel:+4367682595032';
+    window.location.href = "tel:+4367682595032";
   };
 
   return (
@@ -42,6 +44,13 @@ const AboutSection = () => {
       </Description>
       <Image className="image">
         <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+      </Image>
+      <Image className="imageSmall">
+        <motion.img
+          variants={photoAnim}
+          src={logo}
+          alt="logo Devcode Solutions"
+        />
       </Image>
       <Wave />
     </About>

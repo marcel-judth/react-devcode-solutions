@@ -1,13 +1,13 @@
 //import icons
-import clock from '../img/clock.svg';
-import diaphragm from '../img/diaphragm.svg';
-import money from '../img/money.svg';
-import teamwork from '../img/teamwork.svg';
-import home2 from '../img/home2.jpg';
-import { About, Description, Image } from '../styles';
-import styled from 'styled-components';
-import { scrollReveal } from '../animation';
-import { useScroll } from './useScroll';
+import clock from "../img/clock.svg";
+import diaphragm from "../img/diaphragm.svg";
+import money from "../img/money.svg";
+import teamwork from "../img/teamwork.svg";
+import home2 from "../img/home2.jpg";
+import { About, Description, Image } from "../styles";
+import styled from "styled-components";
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
 const ServicesSection = () => {
   const [element, controls, view] = useScroll();
   console.log(view);
@@ -83,11 +83,26 @@ const Card = styled.div`
   .icon {
     display: flex;
     align-items: center;
+    img {
+      max-height: 5vh;
+    }
     h3 {
       margin-left: 1rem;
       background: white;
       color: black;
       padding: 1rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 2rem 0rem;
+
+    p {
+      display: none;
     }
   }
 `;

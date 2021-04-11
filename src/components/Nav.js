@@ -1,7 +1,8 @@
-import styled from 'styled-components';
-import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import logo from '../img/logo.svg';
+import styled from "styled-components";
+import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import logo from "../img/logo.svg";
+import { useRef } from "react";
 
 const Nav = () => {
   const { pathname } = useLocation();
@@ -19,18 +20,20 @@ const Nav = () => {
           <Link to="/">1. Home</Link>
           <Line
             transition={{ duration: 0.75 }}
-            initial={{ width: '0%' }}
-            animate={{ width: pathname === '/' ? '50%' : '0%' }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/" ? "100%" : "0%" }}
           />
         </li>
         <li>
           <Link to="/work">2. Projekte</Link>
           <Line
             transition={{ duration: 0.75 }}
-            initial={{ width: '0%' }}
+            initial={{ width: "0%" }}
             animate={{
               width:
-                pathname === '/work' || pathname === '/work/:id' ? '50%' : '0%',
+                pathname === "/work" || pathname === "/work/:id"
+                  ? "100%"
+                  : "0%",
             }}
           />
         </li>
@@ -38,8 +41,8 @@ const Nav = () => {
           <Link to="/contact">3. Kontakt</Link>
           <Line
             transition={{ duration: 0.75 }}
-            initial={{ width: '0%' }}
-            animate={{ width: pathname === '/contact' ? '50%' : '0%' }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/contact" ? "100%" : "0%" }}
           />
         </li>
       </ul>
@@ -71,7 +74,7 @@ const StyledNav = styled.nav`
     font-weight: lighter;
   }
   li {
-    padding-left: 10rem;
+    margin-left: 10rem;
     position: relative;
   }
 
@@ -95,7 +98,7 @@ const StyledNav = styled.nav`
       justify-content: space-around;
       width: 100%;
       li {
-        padding: 0;
+        margin: 0;
       }
     }
   }
@@ -107,7 +110,7 @@ const Line = styled(motion.div)`
   width: 0%;
   position: absolute;
   bottom: -80%;
-  left: 60%;
+  left: 0%;
   @media (max-width: 1300px) {
     left: 0%;
   }

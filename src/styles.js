@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 //styled compontents
 export const About = styled(motion.div)`
@@ -10,8 +10,7 @@ export const About = styled(motion.div)`
   padding: 5rem 10vw;
   color: white;
 
-  .image,
-  img {
+  .image img {
     border-radius: 5rem;
   }
 
@@ -23,23 +22,31 @@ export const About = styled(motion.div)`
     margin-right: 2rem;
   }
 
+  .imageSmall {
+    display: none;
+  }
+
   @media (max-width: 1300px) {
     padding: 2.5rem 5vw;
   }
 
   @media (max-width: 800px) {
     flex-direction: column-reverse;
-    /* padding: 2rem 3vw; */
     text-align: center;
 
-    .image,
-    img {
-      border-radius: 4%;
-      height: 15vh;
-      width: auto;
-    }
     .image {
-      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .imageSmall {
+      align-items: center;
+      display: flex;
+    }
+
+    img {
+      display: block;
+      height: 15vh !important;
+      width: auto !important;
     }
   }
 `;
@@ -48,9 +55,11 @@ export const Description = styled.div`
   flex: 2;
   padding-right: 5rem;
   z-index: 2;
+
   h2 {
     font-weight: normal;
   }
+
   @media (max-width: 1300px) {
     padding: 0;
     button {
@@ -70,6 +79,10 @@ export const Image = styled.div`
     height: auto;
     max-height: 70vh;
     object-fit: cover;
+  }
+
+  @media (max-width: 800px) {
+    overflow: visible;
   }
 `;
 

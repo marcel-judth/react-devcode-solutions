@@ -1,10 +1,10 @@
 //animations
-import { motion } from 'framer-motion';
-import { pageAnimation, titleAnim } from '../animation';
-import styled from 'styled-components';
-import { FaPhone, FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa';
-import { IoMdMail } from 'react-icons/io';
-import { AiFillInstagram } from 'react-icons/ai';
+import { motion } from "framer-motion";
+import { fade, flyIn, flyInLong, pageAnimation, titleAnim } from "../animation";
+import styled from "styled-components";
+import { FaPhone, FaMapMarkerAlt, FaFacebookF } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -29,7 +29,7 @@ const Contact = () => {
             </ContactText>
           </Hide>
 
-          <form autoComplete="off">
+          <motion.form variants={fade} autoComplete="off">
             <InputWrapper>
               <input type="text" name="name" autoComplete="off" required />
               <label htmlFor="name" className="label-name">
@@ -50,10 +50,10 @@ const Contact = () => {
             </InputWrapper>
 
             <SubmitButton>Senden</SubmitButton>
-          </form>
+          </motion.form>
         </div>
 
-        <InfoContainer>
+        <InfoContainer variants={flyInLong}>
           <h3>Info</h3>
 
           <div className="info-wrapper">
@@ -69,7 +69,7 @@ const Contact = () => {
             <FaMapMarkerAlt /> <a href="https://instagram.com">Villach, AT</a>
           </div>
         </InfoContainer>
-        <BackgroundDiv />
+        <BackgroundDiv variants={flyIn} initial="hidden" animate="show" />
         <SocialMediaIcons
           variants={pageAnimation}
           initial="hidden"
@@ -88,7 +88,7 @@ const Contact = () => {
   );
 };
 
-const BackgroundDiv = styled.div`
+const BackgroundDiv = styled(motion.div)`
   height: 100%;
   width: 20%;
   position: absolute;
@@ -159,7 +159,7 @@ const SubmitButton = styled.button`
   }
 `;
 
-const InfoContainer = styled.div`
+const InfoContainer = styled(motion.div)`
   width: 35%;
   height: 50%;
   position: absolute;
@@ -245,7 +245,7 @@ const InputWrapper = styled.div`
   }
 
   label::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -2px;

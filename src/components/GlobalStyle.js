@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -15,7 +15,7 @@ html{
         }
     }
     @media (max-width: 1300px){
-        font-size: 80%
+        font-size: 70%
     }
 }
 
@@ -64,6 +64,17 @@ p{
     color: #ccc;
     font-size: 1.4rem;
     line-height: 150%;
+}
+
+@media (max-width: 800px) {
+     p {
+      padding: 1rem 0rem !important;
+    }
+
+    button {
+        padding: 0.8rem 2rem;
+            font-size: 0.9 rem;
+    }
 }
 `;
 
