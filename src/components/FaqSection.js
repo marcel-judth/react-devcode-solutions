@@ -4,7 +4,6 @@ import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { scrollReveal } from "../animation";
-import { CgWebsite } from "react-icons/cg";
 import { MdComputer, MdWeb } from "react-icons/md";
 import { FaMobileAlt, FaInstagram } from "react-icons/fa";
 
