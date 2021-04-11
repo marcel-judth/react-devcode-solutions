@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import logo from "../img/logo.svg";
-import { useRef } from "react";
 
 const Nav = () => {
   const { pathname } = useLocation();
