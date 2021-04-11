@@ -1,19 +1,19 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 //images
-import travelly from '../img/Travelly-1.png';
-import eventApp from '../img/IphoneMockups.png';
-import uniconta from '../img/Desktop.png';
-import webshop from '../img/Webshop.png';
-import outdoor from '../img/Outdoorsolution.png';
-import elenaJoy from '../img/ElenaJoy.png';
-import kinofabrik from '../img/Kinofabrik.png';
-import gh from '../img/GH.png';
-import musicPlayer from '../img/musicPlayer.png';
-import portfolio from '../img/portfolio.png';
+import travelly from "../img/Travelly-1.png";
+import eventApp from "../img/IphoneMockups.png";
+import uniconta from "../img/Desktop.png";
+import webshop from "../img/Webshop.png";
+import outdoor from "../img/Outdoorsolution.png";
+import elenaJoy from "../img/ElenaJoy.png";
+import kinofabrik from "../img/Kinofabrik.png";
+import gh from "../img/GH.png";
+import musicPlayer from "../img/musicPlayer.png";
+import portfolio from "../img/portfolio.png";
 
 //animations
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import {
   pageAnimation,
   fade,
@@ -21,9 +21,9 @@ import {
   lineAnim,
   sliderContainer,
   slider,
-} from '../animation';
-import { useScroll } from '../components/useScroll';
-import ScrollTop from '../components/ScrollTop';
+} from "../animation";
+import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -42,7 +42,7 @@ const OurWork = () => {
       initial="hidden"
       animate="show"
       exit="exit"
-      style={{ background: 'rgb(231, 231, 231)' }}
+      style={{ background: "rgb(231, 231, 231)" }}
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider} />
@@ -60,6 +60,7 @@ const OurWork = () => {
               src={travelly}
               variants={photoAnim}
               alt="travelly website"
+              loading="lazy"
             />
           </Hide>
         </Link>
@@ -74,7 +75,14 @@ const OurWork = () => {
         <h2>App1</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/eventApp">
-          <img src={eventApp} alt="eventApp-mockups" />
+          <Hide>
+            <motion.img
+              src={eventApp}
+              variants={photoAnim}
+              alt="eventApp-mockups"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
       <Project

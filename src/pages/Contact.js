@@ -1,6 +1,12 @@
 //animations
 import { motion } from "framer-motion";
-import { fade, flyIn, flyInLong, pageAnimation, titleAnim } from "../animation";
+import {
+  fadeContact,
+  flyIn,
+  flyInLong,
+  pageAnimation,
+  titleAnim,
+} from "../animation";
 import styled from "styled-components";
 import { FaPhone, FaMapMarkerAlt, FaFacebookF } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -29,7 +35,7 @@ const Contact = () => {
             </ContactText>
           </Hide>
 
-          <motion.form variants={fade} autoComplete="off">
+          <motion.form variants={fadeContact} autoComplete="off">
             <InputWrapper>
               <input type="text" name="name" autoComplete="off" required />
               <label htmlFor="name" className="label-name">
@@ -113,6 +119,7 @@ const ContactStyle = styled(motion.div)`
   @media (max-width: 900px) {
     padding: 0rem;
     padding-top: 5vh;
+    min-height: auto;
     .form-wrapper {
       padding: 0rem 8vw;
     }
@@ -211,6 +218,7 @@ const SocialMediaIcons = styled.div`
   right: 0;
   width: 20%;
   display: flex;
+  z-index: 1;
   justify-content: space-evenly;
   a {
     color: white;

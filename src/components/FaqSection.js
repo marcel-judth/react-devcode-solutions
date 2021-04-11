@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { About } from '../styles';
-import Toggle from './Toggle';
-import { AnimateSharedLayout } from 'framer-motion';
-import { useScroll } from './useScroll';
-import { scrollReveal } from '../animation';
-import { CgWebsite } from 'react-icons/cg';
-import { MdComputer } from 'react-icons/md';
-import { FaMobileAlt, FaInstagram } from 'react-icons/fa';
+import styled from "styled-components";
+import { About } from "../styles";
+import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
+import { CgWebsite } from "react-icons/cg";
+import { MdComputer, MdWeb } from "react-icons/md";
+import { FaMobileAlt, FaInstagram } from "react-icons/fa";
 
 const FaqSection = () => {
   const [element, controls] = useScroll();
@@ -21,7 +21,7 @@ const FaqSection = () => {
         <span>Leistungen</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="Web-Anwendungen" icon={<CgWebsite />}>
+        <Toggle title="Web-Anwendungen" icon={<MdWeb />}>
           <div className="answer">
             <p> (Webshops, CMS, Portfolios, Business, ...)</p>
             <p>
