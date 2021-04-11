@@ -11,6 +11,7 @@ import kinofabrik from "../img/Kinofabrik.png";
 import gh from "../img/GH.png";
 import musicPlayer from "../img/musicPlayer.png";
 import portfolio from "../img/portfolio.png";
+import doneWithIt from "../img/projects/MockupsDoneWithIT.png";
 
 //animations
 import { motion } from "framer-motion";
@@ -35,6 +36,7 @@ const OurWork = () => {
   const [element7, controls7] = useScroll();
   const [element8, controls8] = useScroll();
   const [element9, controls9] = useScroll();
+  const [element10, controls10] = useScroll();
 
   return (
     <Work
@@ -123,6 +125,7 @@ const OurWork = () => {
           <img src={outdoor} alt="outdoorsolution website" />
         </Link>
       </Project>
+
       <Project
         ref={element5}
         variants={fade}
@@ -131,10 +134,11 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/elena-joy-website">
-          <img src={elenaJoy} alt="elena joy website" />
+        <Link to="/work/doneWithIt">
+          <img src={doneWithIt} alt="done With It  App" />
         </Link>
       </Project>
+
       <Project
         ref={element6}
         variants={fade}
@@ -143,8 +147,8 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/kinofabrik">
-          <img src={kinofabrik} alt="kinofabrik Website" />
+        <Link to="/work/elena-joy-website">
+          <img src={elenaJoy} alt="elena joy website" />
         </Link>
       </Project>
       <Project
@@ -155,14 +159,27 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
+        <Link to="/work/kinofabrik">
+          <img src={kinofabrik} alt="kinofabrik Website" />
+        </Link>
+      </Project>
+
+      <Project
+        ref={element8}
+        variants={fade}
+        animate={controls8}
+        initial="hidden"
+      >
+        <h2>Website</h2>
+        <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/gh-social-media">
           <img src={gh} alt="the athlete" />
         </Link>
       </Project>
       <Project
-        ref={element8}
+        ref={element9}
         variants={fade}
-        animate={controls8}
+        animate={controls9}
         initial="hidden"
       >
         <h2>Music-Player</h2>
@@ -172,9 +189,9 @@ const OurWork = () => {
         </Link>
       </Project>
       <Project
-        ref={element9}
+        ref={element10}
         variants={fade}
-        animate={controls9}
+        animate={controls10}
         initial="hidden"
       >
         <h2>Website</h2>

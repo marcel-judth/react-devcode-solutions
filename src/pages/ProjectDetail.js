@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import { useHistory } from 'react-router-dom';
-import { ProjectState } from '../projectState';
-import { useEffect, useState } from 'react';
+import styled from "styled-components";
+import { useHistory } from "react-router-dom";
+import { ProjectState } from "../projectState";
+import { useEffect, useState } from "react";
 //animations
-import { motion } from 'framer-motion';
-import { pageAnimation } from '../animation';
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const MovieDetail = () => {
   const history = useHistory();
@@ -106,7 +106,7 @@ const ImageDisplay = styled.div`
   min-height: 50vh;
   img {
     width: 100%;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
   }
 `;

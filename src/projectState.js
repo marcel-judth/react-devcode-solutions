@@ -1,251 +1,276 @@
 //Import Images
-import travellyLanding from './img/projects/Travelly-Landing.png';
-import eventApp from './img/projects/IphoneMockups.png';
-import desktopApp from './img/projects/Desktop.png';
-import webshop from './img/projects/Webshop.png';
-import outdoorsolution from './img/projects/OutdoorSolution_Landing.png';
-import elenajoy from './img/projects/ElenaJoy_Landing.png';
-import kinofabrik from './img/projects/Kinofabrik_Landing_Page.png';
-import gh from './img/projects/GH_Landing.png';
-import musicPlayer from './img/projects/musicPlayer.png';
-import portfolio from './img/projects/Portfolio.png';
+import travellyLanding from "./img/projects/Travelly-Landing.png";
+import eventApp from "./img/projects/IphoneMockups.png";
+import desktopApp from "./img/projects/Desktop.png";
+import webshop from "./img/projects/Webshop.png";
+import outdoorsolution from "./img/projects/OutdoorSolution_Landing.png";
+import elenajoy from "./img/projects/ElenaJoy_Landing.png";
+import kinofabrik from "./img/projects/Kinofabrik_Landing_Page.png";
+import gh from "./img/projects/GH_Landing.png";
+import musicPlayer from "./img/projects/musicPlayer.png";
+import portfolio from "./img/projects/Portfolio.png";
+import doneWithIt from "./img/projects/MockupsDoneWithIT.png";
 
-import travelly2 from './img/projects/Travelly_About.png';
-import loginDesktopApp from './img/projects/Desktop.png';
-import outdoorshop from './img/projects/OutdoorSolution_Shop.png';
-import elenyjoyContact from './img/projects/ElenaJoy_Contact.png';
-import kinofabrikTickets from './img/projects/Kinofabrik_Tickets.png';
-import ghServices from './img/projects/GH_Services.png';
+import travelly2 from "./img/projects/Travelly_About.png";
+import loginDesktopApp from "./img/projects/Desktop.png";
+import outdoorshop from "./img/projects/OutdoorSolution_Shop.png";
+import elenyjoyContact from "./img/projects/ElenaJoy_Contact.png";
+import kinofabrikTickets from "./img/projects/Kinofabrik_Tickets.png";
+import ghServices from "./img/projects/GH_Services.png";
+import doneWithItLogin from "./img/projects/DoneWithIt_Login.png";
 
 export const ProjectState = () => {
   return [
     {
-      title: 'Website für Ihr Business',
+      title: "Website für Ihr Business",
       mainImg: travellyLanding,
       secondaryImg: travelly2,
-      url: '/work/travelly-website',
+      url: "/work/travelly-website",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'App',
+      title: "App",
       mainImg: eventApp,
       secondaryImg: undefined,
-      url: '/work/eventApp',
+      url: "/work/eventApp",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'Desktop-Anwendung',
+      title: "Desktop-Anwendung",
       mainImg: desktopApp,
       secondaryImg: loginDesktopApp,
-      url: '/work/uniconta',
+      url: "/work/uniconta",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'Webshop',
+      title: "Webshop",
       mainImg: webshop,
       secondaryImg: undefined,
-      url: '/work/webshop',
+      url: "/work/webshop",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'Website',
+      title: "Website",
       mainImg: outdoorsolution,
       secondaryImg: outdoorshop,
-      url: '/work/outdoorsolution',
+      url: "/work/outdoorsolution",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'Website',
+      title: "Website",
       mainImg: elenajoy,
       secondaryImg: elenyjoyContact,
-      url: '/work/elena-joy-website',
+      url: "/work/elena-joy-website",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'Website',
+      title: "Website",
       mainImg: kinofabrik,
       secondaryImg: kinofabrikTickets,
-      url: '/work/kinofabrik',
+      url: "/work/kinofabrik",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'Website',
+      title: "Website",
       mainImg: gh,
       secondaryImg: ghServices,
-      url: '/work/gh-social-media',
+      url: "/work/gh-social-media",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'Website',
+      title: "Website",
       mainImg: musicPlayer,
       secondaryImg: undefined,
-      url: '/work/music-player',
+      url: "/work/music-player",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: 'Website',
+      title: "Website",
       mainImg: portfolio,
       secondaryImg: undefined,
-      url: '/work/portfolio',
+      url: "/work/portfolio",
       awards: [
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 2',
+          title: "Text 2",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: 'Text 3',
+          title: "Text 3",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+      ],
+    },
+    {
+      title: "App",
+      mainImg: doneWithItLogin,
+      secondaryImg: doneWithIt,
+      url: "/work/doneWithIt",
+      awards: [
+        {
+          title: "Text 2",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Text 2",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Text 3",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
