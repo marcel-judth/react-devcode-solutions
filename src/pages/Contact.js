@@ -1,18 +1,42 @@
 //animations
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import {
   fadeContact,
   flyIn,
   flyInLong,
   pageAnimation,
   titleAnim,
-} from "../animation";
-import styled from "styled-components";
-import { FaPhone, FaMapMarkerAlt, FaFacebookF } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
-import { AiFillInstagram } from "react-icons/ai";
+} from '../animation';
+import styled from 'styled-components';
+import { FaPhone, FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa';
+import { IoMdMail } from 'react-icons/io';
+import { AiFillInstagram } from 'react-icons/ai';
 
 const Contact = () => {
+  const submitForm = (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        const button = document.querySelector('.contact-form-btn');
+        button.disabled = true;
+        button.innerText = 'Vielen Dank!';
+        button.classList.add('btn-sent');
+        document.getElementById('contact-form').reset();
+        console.log('SUCCESS');
+      } else {
+        console.log('ERROR', xhr);
+      }
+    };
+    xhr.send(data);
+  };
+
   return (
     <>
       <ContactStyle
@@ -35,7 +59,14 @@ const Contact = () => {
             </ContactText>
           </Hide>
 
-          <motion.form variants={fadeContact} autoComplete="off">
+          <motion.form
+            id="contact-form"
+            variants={fadeContact}
+            autoComplete="off"
+            onSubmit={submitForm}
+            action="https://formspree.io/f/mzbklnpk"
+            method="POST"
+          >
             <InputWrapper>
               <input type="text" name="name" autoComplete="off" required />
               <label htmlFor="name" className="label-name">
@@ -43,7 +74,7 @@ const Contact = () => {
               </label>
             </InputWrapper>
             <InputWrapper>
-              <input type="text" name="email" autoComplete="off" required />
+              <input type="text" name="contact" autoComplete="off" required />
               <label htmlFor="name" className="label-name">
                 <span className="content-name">Email / Tel.</span>
               </label>
@@ -55,7 +86,9 @@ const Contact = () => {
               </label>
             </InputWrapper>
 
-            <SubmitButton>Senden</SubmitButton>
+            <SubmitButton type="submit" className="contact-form-btn">
+              Senden
+            </SubmitButton>
           </motion.form>
         </div>
 
@@ -82,10 +115,10 @@ const Contact = () => {
           animate="show"
           exit="exit"
         >
-          <a href="https://instagram.com">
+          <a href="https://www.instagram.com/devcode.solutions/">
             <FaFacebookF />
           </a>
-          <a href="https://instagram.com">
+          <a href="https://www.instagram.com/devcode.solutions/">
             <AiFillInstagram />
           </a>
         </SocialMediaIcons>
@@ -112,6 +145,20 @@ const ContactStyle = styled(motion.div)`
   color: #353535;
   min-height: 90vh;
   background: rgb(231, 231, 231);
+  position: relative;
+
+  .btn-sent {
+    border: none;
+    border: 0.1rem solid grey;
+    background: unset;
+    color: grey;
+    background: unset;
+    &:hover {
+      transform: scale(1);
+      transition: 1s ease;
+    }
+  }
+
   @media (max-width: 1200px) {
     font-size: 1rem;
   }
@@ -217,6 +264,7 @@ const SocialMediaIcons = styled.div`
   bottom: 0;
   right: 0;
   width: 20%;
+  min-width: 10rem;
   display: flex;
   z-index: 1;
   justify-content: space-evenly;
@@ -253,7 +301,7 @@ const InputWrapper = styled.div`
   }
 
   label::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -2px;

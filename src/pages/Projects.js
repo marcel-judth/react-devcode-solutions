@@ -1,20 +1,20 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 //images
-import travelly from "../img/Travelly-1.png";
-import eventApp from "../img/IphoneMockups.png";
-import uniconta from "../img/Desktop.png";
-import webshop from "../img/Webshop.png";
-import outdoor from "../img/Outdoorsolution.png";
-import elenaJoy from "../img/ElenaJoy.png";
-import kinofabrik from "../img/Kinofabrik.png";
-import gh from "../img/GH.png";
-import musicPlayer from "../img/musicPlayer.png";
-import portfolio from "../img/portfolio.png";
-import doneWithIt from "../img/projects/MockupsDoneWithIT.png";
+import travelly from '../img/Travelly-1.png';
+import eventApp from '../img/IphoneMockups.png';
+import uniconta from '../img/Desktop.png';
+import webshop from '../img/Webshop.png';
+import outdoor from '../img/Outdoorsolution.png';
+import elenaJoy from '../img/ElenaJoy.png';
+import kinofabrik from '../img/Kinofabrik.png';
+import gh from '../img/GH.png';
+import musicPlayer from '../img/musicPlayer.png';
+import portfolio from '../img/portfolio.png';
+import doneWithIt from '../img/projects/MockupsDoneWithIT.jpg';
 
 //animations
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import {
   pageAnimation,
   fade,
@@ -22,9 +22,9 @@ import {
   lineAnim,
   sliderContainer,
   slider,
-} from "../animation";
-import { useScroll } from "../components/useScroll";
-import ScrollTop from "../components/ScrollTop";
+} from '../animation';
+import { useScroll } from '../components/useScroll';
+import ScrollTop from '../components/ScrollTop';
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -44,7 +44,7 @@ const OurWork = () => {
       initial="hidden"
       animate="show"
       exit="exit"
-      style={{ background: "rgb(231, 231, 231)" }}
+      style={{ background: 'rgb(231, 231, 231)' }}
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider} />
@@ -96,7 +96,14 @@ const OurWork = () => {
         <h2>Desktop-App</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/uniconta">
-          <img src={uniconta} alt="desktop application macbook" />
+          <Hide>
+            <motion.img
+              src={uniconta}
+              variants={photoAnim}
+              alt="desktop application macbook"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
 
@@ -109,7 +116,14 @@ const OurWork = () => {
         <h2>Webshop</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/webshop">
-          <img src={webshop} alt="webshop mockups" />
+          <Hide>
+            <motion.img
+              src={webshop}
+              variants={photoAnim}
+              alt="Online Shop"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
 
@@ -122,7 +136,14 @@ const OurWork = () => {
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/outdoorsolution">
-          <img src={outdoor} alt="outdoorsolution website" />
+          <Hide>
+            <motion.img
+              src={outdoor}
+              variants={photoAnim}
+              alt="Outdoor Solution Firmen-Webseite"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
 
@@ -135,7 +156,14 @@ const OurWork = () => {
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/doneWithIt">
-          <img src={doneWithIt} alt="done With It  App" />
+          <Hide>
+            <motion.img
+              src={doneWithIt}
+              variants={photoAnim}
+              alt="Done With IT Mobile App"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
 
@@ -148,7 +176,14 @@ const OurWork = () => {
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/elena-joy-website">
-          <img src={elenaJoy} alt="elena joy website" />
+          <Hide>
+            <motion.img
+              src={elenaJoy}
+              variants={photoAnim}
+              alt="Elena Joy Persönliche Website"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
       <Project
@@ -160,7 +195,14 @@ const OurWork = () => {
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/kinofabrik">
-          <img src={kinofabrik} alt="kinofabrik Website" />
+          <Hide>
+            <motion.img
+              src={kinofabrik}
+              variants={photoAnim}
+              alt="Kinofabrik Firmen Website"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
 
@@ -173,7 +215,14 @@ const OurWork = () => {
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/gh-social-media">
-          <img src={gh} alt="the athlete" />
+          <Hide>
+            <motion.img
+              src={gh}
+              variants={photoAnim}
+              alt="GH Company Website"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
       <Project
@@ -185,7 +234,14 @@ const OurWork = () => {
         <h2>Music-Player</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/music-player">
-          <img src={musicPlayer} alt="music player" />
+          <Hide>
+            <motion.img
+              src={musicPlayer}
+              variants={photoAnim}
+              alt="desktop application macbook"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
       <Project
@@ -197,7 +253,14 @@ const OurWork = () => {
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
         <Link to="/work/portfolio">
-          <img src={portfolio} alt="portfolio website" />
+          <Hide>
+            <motion.img
+              src={portfolio}
+              variants={photoAnim}
+              alt="portfolio website"
+              loading="lazy"
+            />
+          </Hide>
         </Link>
       </Project>
 
