@@ -32,7 +32,7 @@ const AboutSection = () => {
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Sie sind auf der Suche nach einer Wesite, die zu ihrem Corporate
+          Sie sind auf der Suche nach einer Website, die zu ihrem Corporate
           Design passt? Nach einer Desktop-Applikation die Ihren Arbeitsalltag
           erleichtern soll? Oder soll es doch eine mobile App sein? DevCode
           Solutions hilft Ihnen gerne dabei!

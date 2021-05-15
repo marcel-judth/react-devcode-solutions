@@ -47,7 +47,7 @@ const ServicesSection = () => {
           <Card className="card">
             <div className="icon">
               <img src={money} alt="icon money" />
-              <h3>Preis</h3>
+              <h3>Preis/Leistung</h3>
             </div>
             <p>Fairer Preis</p>
           </Card>

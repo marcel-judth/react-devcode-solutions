@@ -24,9 +24,9 @@ const FaqSection = () => {
           <div className="answer">
             <p> (Webshops, CMS, Portfolios, Business, ...)</p>
             <p>
-              Individuell designte Website für Ihre Firma die auf Ihre
-              Bedürfnisse abgestimmt wird. Von einfachen statischen Websiten bis
-              hin zu dynamischen Web-Applikationen.
+              Individuell designte Website für Ihre Firma, die auf Ihre
+              Bedürfnisse abgestimmt wird. Mein Portfolio umfasst statische
+              Websiten bis hin zu dynamischen Web-Applikationen.
             </p>
           </div>
         </Toggle>
@@ -34,14 +34,13 @@ const FaqSection = () => {
         <Toggle title="Desktop-Anwendungen" icon={<MdComputer color="white" />}>
           <div className="answer">
             <p>
-              {' '}
               (Rechnungsverwaltung, kleinere ERP-Systeme, Automatisierungen,
               Auftragsverwaltung ...)
             </p>
             <p>
-              Viele Aufgaben in Ihrem Unternehmen können durch einfache
-              Programme vereinfacht werden damit Sie sich auf die wesentlichen
-              Themen konzentrieren können.
+              Viele Aufgaben in Ihrem Unternehmen können durch simple Programme
+              vereinfacht werden. So haben Sie Zeit sich auf die wesentlichen
+              Themen in Ihrem Unternehmen konzentrieren zu können.
             </p>
           </div>
         </Toggle>
@@ -50,21 +49,23 @@ const FaqSection = () => {
           <div className="answer">
             <p>(Shops, Zeiterfassung, Steuerungen, Lagerverwaltungs, ...)</p>
             <p>
-              Eine Idee die Sie schon länger verwirklichen wollen? Melden Sie
-              sich bei DevCode Solutions. Zusammen finden wir eine Lösung.
+              Haben Sie deine Idee die Sie schon länger verwirklichen wollen?
+              Melden Sie sich bei DevCode Solutions. Zusammen finden wir die
+              beste Lösung und bringen zusammen Ihre App bis in den App-Store.
             </p>
           </div>
         </Toggle>
 
         <Toggle
-          title="Social-Media marketing "
+          title="Social-Media Marketing "
           icon={<FaInstagram color="white" />}
         >
           <div className="answer">
             <p>(Instagram, Facebook, Twitter, ...)</p>
             <p>
-              Strategien um möglichst viele Nutzer auf Ihr Unternehemen
-              aufmerksam zu machen und damit die Neukundengewinnung anzukurbeln.
+              Möglichst viele Nutzer können durch gezieltes Social Media
+              Marketing auf Ihr Unternehmen aufmerksam gemacht werden. Dadurch
+              wird Ihre Neukunden-Gewinnung angekurbelt.
             </p>
           </div>
         </Toggle>
