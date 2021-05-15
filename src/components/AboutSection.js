@@ -1,21 +1,21 @@
 // import home1 from '../img/marcel-judth.png';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { About, Description, Image, Hide } from "../styles";
-import { titleAnim, fade, photoAnim } from "../animation";
-import Wave from "./Wave";
+import { About, Description, Image, Hide } from '../styles';
+import { titleAnim, fade, photoAnim } from '../animation';
+import Wave from './Wave';
 
-import home1 from "../img/about-section.png";
-import logo from "../img/logo.svg";
+import home1 from '../img/about-section.png';
+import logo from '../img/logo.svg';
 
 const AboutSection = () => {
   const sendMail = () => {
-    window.location.href = "mailto:info@devcodesolutions.com";
+    window.location.href = 'mailto:info@devcodesolutions.com';
   };
 
   const call = () => {
-    window.location.href = "tel:+4367682595032";
+    window.location.href = 'tel:+4367682595032';
   };
 
   return (
@@ -32,8 +32,10 @@ const AboutSection = () => {
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Contact us for any software solutions that you have. We have
-          professionals with amazing skills
+          Sie sind auf der Suche nach einer Wesite, die zu ihrem Corporate
+          Design passt? Nach einer Desktop-Applikation die Ihren Arbeitsalltag
+          erleichtern soll? Oder soll es doch eine mobile App sein? DevCode
+          Solutions hilft Ihnen gerne dabei!
         </motion.p>
         <motion.button onClick={call} variants={fade} className="call-btn">
           Anrufen

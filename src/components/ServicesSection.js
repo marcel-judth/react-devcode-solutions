@@ -1,13 +1,13 @@
 //import icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.jpg";
-import { About, Description, Image } from "../styles";
-import styled from "styled-components";
-import { scrollReveal } from "../animation";
-import { useScroll } from "./useScroll";
+import clock from '../img/clock.svg';
+import diaphragm from '../img/diaphragm.svg';
+import money from '../img/money.svg';
+import teamwork from '../img/teamwork.svg';
+import home2 from '../img/home2.jpg';
+import { About, Description, Image } from '../styles';
+import styled from 'styled-components';
+import { scrollReveal } from '../animation';
+import { useScroll } from './useScroll';
 const ServicesSection = () => {
   const [element, controls, view] = useScroll();
   console.log(view);
@@ -20,36 +20,36 @@ const ServicesSection = () => {
     >
       <Description className="description">
         <h2>
-          High <span>quality</span> services
+          Höchste Qualität - <span> effiziente </span> Arbeitsweise
         </h2>
         <Cards className="cards">
           <Card className="card">
             <div className="icon">
               <img src={clock} alt="icon clock" />
-              <h3>Efficient</h3>
+              <h3>Effizienz</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Höchste Qualität - effiziente Arbeitsweise</p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={teamwork} alt="icon teamwork" />
-              <h3>Guidance</h3>
+              <h3>Beratung</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Ihre Idee - persönliche Beratung</p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={diaphragm} alt="icon diaphragm" />
-              <h3>Breathtaking</h3>
+              <h3>Individualität</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Ergebnisse die Ihre Kunden begeistert.</p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={money} alt="icon money" />
-              <h3>Affordable</h3>
+              <h3>Preis</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Fairer Preis</p>
           </Card>
         </Cards>
       </Description>

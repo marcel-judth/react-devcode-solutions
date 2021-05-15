@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { About } from "../styles";
-import Toggle from "./Toggle";
-import { AnimateSharedLayout } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
-import { MdComputer, MdWeb } from "react-icons/md";
-import { FaMobileAlt, FaInstagram } from "react-icons/fa";
+import styled from 'styled-components';
+import { About } from '../styles';
+import Toggle from './Toggle';
+import { AnimateSharedLayout } from 'framer-motion';
+import { useScroll } from './useScroll';
+import { scrollReveal } from '../animation';
+import { MdComputer, MdWeb } from 'react-icons/md';
+import { FaMobileAlt, FaInstagram } from 'react-icons/fa';
 
 const FaqSection = () => {
   const [element, controls] = useScroll();
@@ -24,28 +24,34 @@ const FaqSection = () => {
           <div className="answer">
             <p> (Webshops, CMS, Portfolios, Business, ...)</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
-              tempore?
+              Individuell designte Website für Ihre Firma die auf Ihre
+              Bedürfnisse abgestimmt wird. Von einfachen statischen Websiten bis
+              hin zu dynamischen Web-Applikationen.
             </p>
           </div>
         </Toggle>
 
         <Toggle title="Desktop-Anwendungen" icon={<MdComputer color="white" />}>
           <div className="answer">
-            <p> (accounting management, article management, dashboards, ...)</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
-              tempore?
+              {' '}
+              (Rechnungsverwaltung, kleinere ERP-Systeme, Automatisierungen,
+              Auftragsverwaltung ...)
+            </p>
+            <p>
+              Viele Aufgaben in Ihrem Unternehmen können durch einfache
+              Programme vereinfacht werden damit Sie sich auf die wesentlichen
+              Themen konzentrieren können.
             </p>
           </div>
         </Toggle>
 
         <Toggle title="Mobile Apps " icon={<FaMobileAlt color="white" />}>
           <div className="answer">
-            <p>(shops, blogs, ticket-management-systems, ...)</p>
+            <p>(Shops, Zeiterfassung, Steuerungen, Lagerverwaltungs, ...)</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
-              tempore?
+              Eine Idee die Sie schon länger verwirklichen wollen? Melden Sie
+              sich bei DevCode Solutions. Zusammen finden wir eine Lösung.
             </p>
           </div>
         </Toggle>
@@ -57,8 +63,8 @@ const FaqSection = () => {
           <div className="answer">
             <p>(Instagram, Facebook, Twitter, ...)</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
-              tempore?
+              Strategien um möglichst viele Nutzer auf Ihr Unternehemen
+              aufmerksam zu machen und damit die Neukundengewinnung anzukurbeln.
             </p>
           </div>
         </Toggle>
