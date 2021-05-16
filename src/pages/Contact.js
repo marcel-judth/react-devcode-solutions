@@ -53,9 +53,7 @@ const Contact = () => {
           </Title>
           <Hide>
             <ContactText variants={titleAnim}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-              dolorum repudiandae eveniet magni deleniti voluptate soluta quasi
-              id obcaecati illo?
+              DevCode Solutions freut sich auf Ihre unverbindliche Anfrage!
             </ContactText>
           </Hide>
 

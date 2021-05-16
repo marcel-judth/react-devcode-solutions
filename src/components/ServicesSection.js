@@ -19,37 +19,35 @@ const ServicesSection = () => {
       variants={scrollReveal}
     >
       <Description className="description">
-        <h2>
-          Höchste Qualität - <span> effiziente </span> Arbeitsweise
-        </h2>
+        <h2>Leistungen</h2>
         <Cards className="cards">
           <Card className="card">
             <div className="icon">
               <img src={clock} alt="icon clock" />
               <h3>Effizienz</h3>
             </div>
-            <p>Höchste Qualität - effiziente Arbeitsweise</p>
+            <p>Rasche Abwicklung von Projekten</p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={teamwork} alt="icon teamwork" />
               <h3>Beratung</h3>
             </div>
-            <p>Ihre Idee - persönliche Beratung</p>
+            <p>Bedarfserhebung durch strukturierte Beratungsgespräche</p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={diaphragm} alt="icon diaphragm" />
               <h3>Individualität</h3>
             </div>
-            <p>Ergebnisse die Ihre Kunden begeistert.</p>
+            <p>Ergebnisse, die zu Ihnen passen und Ihre Kunden begeistern</p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={money} alt="icon money" />
-              <h3>Preis/Leistung</h3>
+              <h3>Betreuung</h3>
             </div>
-            <p>Fairer Preis</p>
+            <p>Kontinuierliche Betreuung, auch nach Projektabschluss</p>
           </Card>
         </Cards>
       </Description>

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { About, Description, Image, Hide } from '../styles';
 import { titleAnim, fade, photoAnim } from '../animation';
 import Wave from './Wave';
+import ScrollTop from '../components/ScrollTop';
 
 import home1 from '../img/about-section.png';
 import logo from '../img/logo.svg';
@@ -23,25 +24,24 @@ const AboutSection = () => {
       <Description className="description">
         <motion.div className="title">
           <Hide className="hide">
-            <motion.h2 variants={titleAnim}>Software-Firma</motion.h2>
-          </Hide>
-          <Hide className="hide">
             <motion.h2 variants={titleAnim}>
-              in <span>Villach</span>
+              <span>DevCode</span> Solutions
             </motion.h2>
           </Hide>
+          {/* <Hide className="hide">
+            <motion.h2 variants={titleAnim}>
+            </motion.h2>
+          </Hide> */}
         </motion.div>
         <motion.p variants={fade}>
-          Sie sind auf der Suche nach einer Website, die zu ihrem Corporate
-          Design passt? Nach einer Desktop-Applikation die Ihren Arbeitsalltag
-          erleichtern soll? Oder soll es doch eine mobile App sein? DevCode
-          Solutions hilft Ihnen gerne dabei!
+          Softwarefirma spezialisiert auf die Entwicklung von{' '}
+          <span>App-, Web- und Desktopanwendungen</span>.
         </motion.p>
         <motion.button onClick={call} variants={fade} className="call-btn">
-          Anrufen
+          Call
         </motion.button>
         <motion.button onClick={sendMail} variants={fade} className="alt-btn">
-          Kontakt
+          Mail
         </motion.button>
       </Description>
       <Image className="image">
@@ -55,6 +55,7 @@ const AboutSection = () => {
         />
       </Image>
       <Wave />
+      <ScrollTop />
     </About>
   );
 };

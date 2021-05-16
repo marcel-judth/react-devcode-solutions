@@ -22,11 +22,11 @@ const FaqSection = () => {
       <AnimateSharedLayout>
         <Toggle title="Web-Anwendungen" icon={<MdWeb />}>
           <div className="answer">
-            <p> (Webshops, CMS, Portfolios, Business, ...)</p>
+            <p> Beispielsweise: Webshops, Blogs, Portfolios, Firmenwebsiten</p>
             <p>
-              Individuell designte Website für Ihre Firma, die auf Ihre
-              Bedürfnisse abgestimmt wird. Mein Portfolio umfasst statische
-              Websiten bis hin zu dynamischen Web-Applikationen.
+              Es gibt keine zweite Chance für den ersten Eindruck. Ein
+              professioneller Webauftritt zählt zu den wirksamsten
+              Marketingtools. DevCode Solutions hilft Ihnen dabei.
             </p>
           </div>
         </Toggle>
@@ -34,8 +34,8 @@ const FaqSection = () => {
         <Toggle title="Desktop-Anwendungen" icon={<MdComputer color="white" />}>
           <div className="answer">
             <p>
-              (Rechnungsverwaltung, kleinere ERP-Systeme, Automatisierungen,
-              Auftragsverwaltung ...)
+              Beispielsweise: Rechnungsverwaltung, ERP-Systeme,
+              Automatisierungen, Auftragsverwaltung
             </p>
             <p>
               Viele Aufgaben in Ihrem Unternehmen können durch simple Programme
@@ -47,11 +47,14 @@ const FaqSection = () => {
 
         <Toggle title="Mobile Apps " icon={<FaMobileAlt color="white" />}>
           <div className="answer">
-            <p>(Shops, Zeiterfassung, Steuerungen, Lagerverwaltungs, ...)</p>
             <p>
-              Haben Sie deine Idee die Sie schon länger verwirklichen wollen?
+              Beispielsweise: Shops, Zeiterfassungen, Steuerungen,
+              Lagerverwaltungen
+            </p>
+            <p>
+              Haben Sie eine Idee die Sie schon länger verwirklichen wollen?
               Melden Sie sich bei DevCode Solutions. Zusammen finden wir die
-              beste Lösung und bringen zusammen Ihre App bis in den App-Store.
+              beste Lösung und bringen Ihre App bis in den App-Store.
             </p>
           </div>
         </Toggle>
@@ -61,11 +64,10 @@ const FaqSection = () => {
           icon={<FaInstagram color="white" />}
         >
           <div className="answer">
-            <p>(Instagram, Facebook, Twitter, ...)</p>
+            <p>Beispielsweise: Instagram, Facebook, Twitter</p>
             <p>
-              Möglichst viele Nutzer können durch gezieltes Social Media
-              Marketing auf Ihr Unternehmen aufmerksam gemacht werden. Dadurch
-              wird Ihre Neukunden-Gewinnung angekurbelt.
+              Möglichst viele potenzielle Kunden können durch gezieltes Social
+              Media Marketing auf Ihr Unternehmen aufmerksam gemacht werden.
             </p>
           </div>
         </Toggle>
