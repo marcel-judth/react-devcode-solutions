@@ -54,18 +54,17 @@ const OurWork = () => {
       </motion.div>
 
       <Project>
-        <motion.h2 variants={fade}>Website1</motion.h2>
+        <motion.h2 variants={fade}>Outdoor Solution</motion.h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/travelly-website">
-          <Hide>
-            <motion.img
-              src={travelly}
-              variants={photoAnim}
-              alt="travelly website"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+
+        <Hide>
+          <motion.img
+            src={outdoor}
+            variants={photoAnim}
+            alt="Outdoor Solution Firmen-Webseite"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
 
       <Project
@@ -115,16 +114,14 @@ const OurWork = () => {
       >
         <h2>Webshop</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/webshop">
-          <Hide>
-            <motion.img
-              src={webshop}
-              variants={photoAnim}
-              alt="Online Shop"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={webshop}
+            variants={photoAnim}
+            alt="Online Shop"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
 
       <Project
@@ -135,16 +132,14 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/outdoorsolution">
-          <Hide>
-            <motion.img
-              src={outdoor}
-              variants={photoAnim}
-              alt="Outdoor Solution Firmen-Webseite"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={travelly}
+            variants={photoAnim}
+            alt="travelly website"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
 
       <Project
@@ -153,18 +148,16 @@ const OurWork = () => {
         animate={controls5}
         initial="hidden"
       >
-        <h2>Website</h2>
+        <h2>Mobile App</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/doneWithIt">
-          <Hide>
-            <motion.img
-              src={doneWithIt}
-              variants={photoAnim}
-              alt="Done With IT Mobile App"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={doneWithIt}
+            variants={photoAnim}
+            alt="Done With IT Mobile App"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
 
       <Project
@@ -175,16 +168,14 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/elena-joy-website">
-          <Hide>
-            <motion.img
-              src={elenaJoy}
-              variants={photoAnim}
-              alt="Elena Joy Persönliche Website"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={elenaJoy}
+            variants={photoAnim}
+            alt="Elena Joy Persönliche Website"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
       <Project
         ref={element7}
@@ -194,16 +185,14 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/kinofabrik">
-          <Hide>
-            <motion.img
-              src={kinofabrik}
-              variants={photoAnim}
-              alt="Kinofabrik Firmen Website"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={kinofabrik}
+            variants={photoAnim}
+            alt="Kinofabrik Firmen Website"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
 
       <Project
@@ -214,16 +203,14 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/gh-social-media">
-          <Hide>
-            <motion.img
-              src={gh}
-              variants={photoAnim}
-              alt="GH Company Website"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={gh}
+            variants={photoAnim}
+            alt="GH Company Website"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
       <Project
         ref={element9}
@@ -233,16 +220,14 @@ const OurWork = () => {
       >
         <h2>Music-Player</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/music-player">
-          <Hide>
-            <motion.img
-              src={musicPlayer}
-              variants={photoAnim}
-              alt="desktop application macbook"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={musicPlayer}
+            variants={photoAnim}
+            alt="Music Player"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
       <Project
         ref={element10}
@@ -252,16 +237,14 @@ const OurWork = () => {
       >
         <h2>Website</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/portfolio">
-          <Hide>
-            <motion.img
-              src={portfolio}
-              variants={photoAnim}
-              alt="portfolio website"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={portfolio}
+            variants={photoAnim}
+            alt="portfolio website"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
 
       <ScrollTop />

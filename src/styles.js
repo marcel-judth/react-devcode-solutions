@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 //styled compontents
 export const About = styled(motion.div)`
@@ -10,7 +10,7 @@ export const About = styled(motion.div)`
   padding: 5rem 10vw;
   color: white;
 
-  .image img {
+  .image {
     border-radius: 5rem;
   }
 

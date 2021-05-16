@@ -1,7 +1,7 @@
 //import icons
 import clock from '../img/clock.svg';
 import diaphragm from '../img/diaphragm.svg';
-import money from '../img/money.svg';
+import consulting from '../img/consulting2.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.jpg';
 import { About, Description, Image } from '../styles';
@@ -19,7 +19,7 @@ const ServicesSection = () => {
       variants={scrollReveal}
     >
       <Description className="description">
-        <h2>Leistungen</h2>
+        <h2>Services</h2>
         <Cards className="cards">
           <Card className="card">
             <div className="icon">
@@ -44,7 +44,21 @@ const ServicesSection = () => {
           </Card>
           <Card className="card">
             <div className="icon">
-              <img src={money} alt="icon money" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40.053"
+                height="34.281"
+                viewBox="0 0 2054 1758"
+              >
+                <image
+                  x="6"
+                  y="6"
+                  width="2042"
+                  height="1746"
+                  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAiCAYAAAAtZZsLAAACRElEQVRYhdXYW4jNURTH8c+MkXJ7YNS4JYwHJETKA4VG4Rm51DwqD1KeR8QzCXnFA+J9HlyHkgf3RIlESYxLyaXctad16sz4n/9gnPM/frU7u7P+p//3rL3X2mvthqn3Dwk1Yy82KlbHsRXdiaIpUJbgfMyf4RoaMahGqN/xDfOwLkYbzibASWVwy8rmRWkxLuIMWpOXOgJkVR3AJV3C8phvT3vwK15gfMFgffU4rW5pn92tL7Ye3ROBIDZpvamHqSkHajOW4mWVwcegCweyjHmA7VhQPa5emvI3gCmSWvClynCD8bySMQ/wbYxC1Vg0QH/K8+BCzMK7KjOMiDR3OcuYB7g/zsZa6Dbm/CngJsyugQeH404lYx7g9RiF6r8OkpThJ+NTlRmGRGHQnWXMA+zE/Opx9dItzM0y5AEexCK8rjLc6EopRj+Ah2MUqlKQ1GOwNAiwVFHPLJ7nF/UwJcAjGIcVdQTXFs3c0QS4K77sjAK1aKWu7nQw7ExB8iT64gs4h6e4GQE0kL2Z6ryh2INTFZ5ZiW34HFstHa0Ty7z4qBTFXZGY92E9JvxDL57EjuSNDFt7xqqdwJZSq1GeZl5hQ1x9DAvv/RgAWCoyRkUDngBnYG2fZ5rjsyVa38a+DVxWHkxQ7wcAVq43UbKlJV6DaZH8P8QzDWV/RlZ3Wav8txq74zhLdz+tv/vDWibojthCI/EA0wM2V3lHXTV0LOCuxM1BWtKPee8p4oi7irF4GO/PLeeKOoNTCkkBcyNa22wv4ie1HWorjRbtrAAAAABJRU5ErkJggg=="
+                />
+              </svg>
+
               <h3>Betreuung</h3>
             </div>
             <p>Kontinuierliche Betreuung, auch nach Projektabschluss</p>
@@ -77,7 +91,7 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 40rem;
   .icon {
     display: flex;
     align-items: center;
@@ -98,10 +112,6 @@ const Card = styled.div`
     align-items: center;
 
     margin: 2rem 0rem;
-
-    p {
-      display: none;
-    }
   }
 `;
 

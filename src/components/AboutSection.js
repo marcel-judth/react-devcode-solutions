@@ -28,10 +28,6 @@ const AboutSection = () => {
               <span>DevCode</span> Solutions
             </motion.h2>
           </Hide>
-          {/* <Hide className="hide">
-            <motion.h2 variants={titleAnim}>
-            </motion.h2>
-          </Hide> */}
         </motion.div>
         <motion.p variants={fade}>
           Softwarefirma spezialisiert auf die Entwicklung von{' '}

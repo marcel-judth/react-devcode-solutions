@@ -107,12 +107,7 @@ const Contact = () => {
           </div>
         </InfoContainer>
         <BackgroundDiv variants={flyIn} initial="hidden" animate="show" />
-        <SocialMediaIcons
-          variants={pageAnimation}
-          initial="hidden"
-          animate="show"
-          exit="exit"
-        >
+        <SocialMediaIcons variants={flyIn}>
           <a href="https://www.instagram.com/devcode.solutions/">
             <FaFacebookF />
           </a>
@@ -257,7 +252,7 @@ const InfoContainer = styled(motion.div)`
   }
 `;
 
-const SocialMediaIcons = styled.div`
+const SocialMediaIcons = styled(motion.div)`
   position: absolute;
   bottom: 0;
   right: 0;

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -42,7 +42,7 @@ button{
 }
 
 h2{
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 2.5rem;
 }
 h3{
@@ -56,7 +56,7 @@ a{
     font-size: 1.1rem;
 }
 span{
-    font-weight: border-left;
+    font-weight: normal;
     color:#23d997;
 }
 p{
