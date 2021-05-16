@@ -1,7 +1,6 @@
 //import icons
 import clock from '../img/clock.svg';
 import diaphragm from '../img/diaphragm.svg';
-import consulting from '../img/consulting2.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.jpg';
 import { About, Description, Image } from '../styles';
