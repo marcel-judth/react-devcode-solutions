@@ -27,7 +27,7 @@ import { useScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
 
 const OurWork = () => {
-  const [element, controls] = useScroll();
+  // const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
   const [element4, controls4] = useScroll();
@@ -66,26 +66,6 @@ const OurWork = () => {
           />
         </Hide>
       </Project>
-
-      {/* <Project
-        ref={element}
-        variants={fade}
-        animate={controls}
-        initial="hidden"
-      >
-        <h2>Mobile App</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/eventApp">
-          <Hide>
-            <motion.img
-              src={eventApp}
-              variants={photoAnim}
-              alt="eventApp-mockups"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
-      </Project> */}
 
       <Project>
         <motion.h2 variants={fade}>Mobile App</motion.h2>
