@@ -4,10 +4,11 @@ import FaqSection from '../components/FaqSection';
 //animations
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
+import styled from 'styled-components';
 
 const AboutUs = () => {
   return (
-    <motion.div
+    <Wrapper
       variants={pageAnimation}
       initial="hidden"
       animate="show"
@@ -16,8 +17,12 @@ const AboutUs = () => {
       <AboutSection />
       <ServicesSection />
       <FaqSection />
-    </motion.div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled(motion.div)`
+  overflow: hidden;
+`;
 
 export default AboutUs;

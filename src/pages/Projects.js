@@ -67,13 +67,13 @@ const OurWork = () => {
         </Hide>
       </Project>
 
-      <Project
+      {/* <Project
         ref={element}
         variants={fade}
         animate={controls}
         initial="hidden"
       >
-        <h2>App1</h2>
+        <h2>Mobile App</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/eventApp">
           <Hide>
@@ -85,7 +85,22 @@ const OurWork = () => {
             />
           </Hide>
         </Link>
+      </Project> */}
+
+      <Project>
+        <motion.h2 variants={fade}>Mobile App</motion.h2>
+        <motion.div className="line" variants={lineAnim}></motion.div>
+
+        <Hide>
+          <motion.img
+            src={eventApp}
+            variants={photoAnim}
+            alt="eventApp-mockups"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
+
       <Project
         ref={element2}
         variants={fade}
