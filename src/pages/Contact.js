@@ -11,6 +11,7 @@ import styled from 'styled-components';
 import { FaPhone, FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import { AiFillInstagram } from 'react-icons/ai';
+import ScrollTop from '../components/ScrollTop';
 
 const Contact = () => {
   const submitForm = (ev) => {
@@ -116,6 +117,7 @@ const Contact = () => {
           </a>
         </SocialMediaIcons>
       </ContactStyle>
+      <ScrollTop />
     </>
   );
 };
