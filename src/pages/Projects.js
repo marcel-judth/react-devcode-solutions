@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 //images
 import travelly from '../img/Travelly-1.png';
 import eventApp from '../img/IphoneMockups.png';
