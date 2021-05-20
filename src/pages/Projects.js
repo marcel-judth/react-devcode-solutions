@@ -89,16 +89,14 @@ const OurWork = () => {
       >
         <h2>Desktop-App</h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/uniconta">
-          <Hide>
-            <motion.img
-              src={uniconta}
-              variants={photoAnim}
-              alt="desktop application macbook"
-              loading="lazy"
-            />
-          </Hide>
-        </Link>
+        <Hide>
+          <motion.img
+            src={uniconta}
+            variants={photoAnim}
+            alt="desktop application macbook"
+            loading="lazy"
+          />
+        </Hide>
       </Project>
 
       <Project
