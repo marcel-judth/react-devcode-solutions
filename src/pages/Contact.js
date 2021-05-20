@@ -109,10 +109,13 @@ const Contact = () => {
         </InfoContainer>
         <BackgroundDiv variants={flyIn} initial="hidden" animate="show" />
         <SocialMediaIcons variants={flyIn}>
-          <a href="https://www.instagram.com/devcode.solutions/">
+          <a href="https://www.facebook.com/devcodesolutions" target="_blank">
             <FaFacebookF />
           </a>
-          <a href="https://www.instagram.com/devcode.solutions/">
+          <a
+            href="https://www.instagram.com/devcode.solutions/"
+            target="_blank"
+          >
             <AiFillInstagram />
           </a>
         </SocialMediaIcons>
