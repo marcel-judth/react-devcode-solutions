@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import logo from '../img/logo.svg';
 
