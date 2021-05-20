@@ -13,7 +13,6 @@ import { AnimatePresence } from 'framer-motion';
 function App() {
   const location = useLocation();
   window.onbeforeunload = function () {
-    console.log('hey there');
     window.scrollTo(0, 0);
   };
 
