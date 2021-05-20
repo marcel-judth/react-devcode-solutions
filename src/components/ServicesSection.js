@@ -18,7 +18,7 @@ const ServicesSection = () => {
       variants={scrollReveal}
     >
       <Description className="description">
-        <h2>Services</h2>
+        <h2>About</h2>
         <Cards className="cards">
           <Card className="card">
             <div className="icon">
