@@ -76,7 +76,7 @@ const OurWork = () => {
 
       <Project
         ref={element1}
-        variants={fade}
+        variants={fadeLong}
         animate={controls1}
         initial="hidden"
       >

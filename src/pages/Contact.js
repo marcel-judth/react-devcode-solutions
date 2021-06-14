@@ -125,7 +125,7 @@ const Contact = () => {
             <AiFillInstagram />
           </a>
         </SocialMediaIcons>
-        <Link className="linkTerms" to="/terms" >
+        <Link className="linkTerms" to="/terms">
           DSGVO & Impressum
         </Link>
       </ContactStyle>
@@ -190,6 +190,7 @@ const ContactStyle = styled(motion.div)`
     .linkTerms {
       z-index: 99;
       color: white;
+      margin-bottom: 0.2rem;
     }
   } ;
 `;
