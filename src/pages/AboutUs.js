@@ -5,6 +5,7 @@ import FaqSection from '../components/FaqSection';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 import styled from 'styled-components';
+import TermsFooter from './TermsFooter';
 
 const AboutUs = () => {
   return (
@@ -17,6 +18,7 @@ const AboutUs = () => {
       <AboutSection />
       <ServicesSection />
       <FaqSection />
+      <TermsFooter />
     </Wrapper>
   );
 };

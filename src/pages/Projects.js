@@ -18,6 +18,7 @@ import { motion } from 'framer-motion';
 import {
   pageAnimation,
   fade,
+  fadeLong,
   photoAnim,
   lineAnim,
   sliderContainer,
@@ -27,7 +28,8 @@ import { useScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
 
 const OurWork = () => {
-  // const [element, controls] = useScroll();
+  const [element, controls] = useScroll();
+  const [element1, controls1] = useScroll();
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
   const [element4, controls4] = useScroll();
@@ -53,8 +55,13 @@ const OurWork = () => {
         <Frame4 variants={slider} />
       </motion.div>
 
-      <Project>
-        <motion.h2 variants={fade}>Outdoor Solution</motion.h2>
+      <Project
+        ref={element}
+        variants={fadeLong}
+        animate={controls}
+        initial="hidden"
+      >
+        <motion.h2 variants={fadeLong}>Outdoor Solution</motion.h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
 
         <Hide>
@@ -67,7 +74,12 @@ const OurWork = () => {
         </Hide>
       </Project>
 
-      <Project>
+      <Project
+        ref={element1}
+        variants={fade}
+        animate={controls1}
+        initial="hidden"
+      >
         <motion.h2 variants={fade}>Mobile App</motion.h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
 

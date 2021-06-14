@@ -12,6 +12,7 @@ import { FaPhone, FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import { AiFillInstagram } from 'react-icons/ai';
 import ScrollTop from '../components/ScrollTop';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Contact = () => {
   const submitForm = (ev) => {
@@ -124,6 +125,9 @@ const Contact = () => {
             <AiFillInstagram />
           </a>
         </SocialMediaIcons>
+        <Link className="linkTerms" to="/terms" >
+          DSGVO & Impressum
+        </Link>
       </ContactStyle>
       <ScrollTop />
     </>
@@ -162,6 +166,15 @@ const ContactStyle = styled(motion.div)`
     }
   }
 
+  .linkTerms {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0.8;
+    color: black;
+    transform: translateX(-50%);
+  }
+
   @media (max-width: 1200px) {
     font-size: 1rem;
   }
@@ -172,6 +185,11 @@ const ContactStyle = styled(motion.div)`
     min-height: auto;
     .form-wrapper {
       padding: 0rem 8vw;
+    }
+
+    .linkTerms {
+      z-index: 99;
+      color: white;
     }
   } ;
 `;
